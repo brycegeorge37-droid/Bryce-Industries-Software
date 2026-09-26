@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Bryce Industries Incorporated: home of LutePlay and future practical, repairable projects.">
+  <title>Bryce Industries Incorporated</title>
+  <style>
+    :root { --navy:#122d4b; --blue:#397cc2; --gold:#e8d766; --paper:#fffdf7; --text:#18283b; }
+    * {box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--text);font:17px/1.6 system-ui,Arial,sans-serif}
+    .wrap{max-width:1080px;margin:auto;padding:0 22px}
+    header{background:var(--navy);color:white;border-bottom:4px solid var(--gold)}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:13px;padding-bottom:13px}
+    .brand{display:flex;align-items:center;gap:12px;color:white;text-decoration:none}
+    .brand img{width:50px;height:64px;object-fit:contain;background:#050505;border-radius:6px}
+    .brand strong{display:block;font:700 25px/1.05 Georgia,serif;letter-spacing:.03em}
+    .brand small{display:block;color:var(--gold);letter-spacing:.2em;font-size:11px}
+    nav{display:flex;gap:18px;flex-wrap:wrap} nav a{color:white;text-decoration:none} nav a:hover,nav a:focus{text-decoration:underline}
+    .hero{background:linear-gradient(125deg,#102a46,#27588a);color:white;padding:74px 0 67px}
+    .hero h1{font:700 clamp(35px,5.2vw,57px)/1.12 Georgia,serif;margin:0 0 15px}
+    .hero p{font-size:21px;max-width:650px;margin:0 0 20px}
+    .hero .eyebrow{color:var(--gold);font-weight:700;letter-spacing:.1em;font-size:13px;margin-bottom:15px}
+    section{padding:54px 0} h2{font:700 34px Georgia,serif;margin:0 0 14px} h3{margin:0 0 8px;font-size:21px}
+    p{max-width:770px} .panel{border:1px solid #d4dbe4;border-radius:9px;background:white;padding:26px}
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:25px}
+    .card{border:1px solid #d4dbe4;background:white;border-radius:8px;padding:20px}
+    .button{display:inline-block;text-align:center;appearance:none;border:none;border-radius:7px;background:var(--blue);color:white;font:700 17px system-ui,sans-serif;padding:13px 22px;text-decoration:none;cursor:pointer}
+    .button.gold{background:var(--gold);color:#18283b}
+    .button[aria-disabled="true"]{background:#d5dae0;color:#56606c;cursor:not-allowed;pointer-events:none}
+    .download-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
+    .download-card{border:1px solid #d4dbe4;border-radius:8px;padding:16px;background:#f9fbfd}
+    .download-card h3{margin:0 0 12px}
+    .download-card .button{display:block;font-size:15px;padding:11px 12px}
+    .download-card p{font-size:13px;margin:10px 0 0;color:#556270}
+    @media(max-width:700px){.download-grid{grid-template-columns:1fr}}
+    .note{color:#556270;font-size:14px;margin-top:10px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .muted{background:#f0f5fa} ul{padding-left:22px}
+    #release-notes li{margin:.4em 0}
+    footer{background:var(--navy);color:white;padding:25px 0} footer a{color:var(--gold)}
+    @media(max-width:700px){.cards{grid-template-columns:1fr}.hero{padding:52px 0}.brand strong{font-size:21px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a href="#home" class="brand" aria-label="Bryce Industries homepage">
+        <img src="Jordan_Insignia.png" alt="Bryce Industries blue and gold insignia">
+        <span><strong>Bryce Industries</strong><small>INCORPORATED</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#luteplay">LutePlay</a>
+        <a href="#downloads">Download</a><a href="#support">Support</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="home">
+    <div class="hero">
+      <div class="wrap">
+        <div class="eyebrow">OUR FIRST PROJECT</div>
+        <h1>Bryce Industries Incorporated</h1>
+        <p>Practical tools, creative projects, and products made with people in mind.</p>
+        <p>We're starting with LutePlay: a local-first music player for your own collection.</p>
+        <div class="cta-row"><a class="button gold" href="#downloads">See LutePlay</a><a class="button" href="#support">Help Bryce Industries Grow</a></div>
+      </div>
+    </div>
+    <section id="luteplay"><div class="wrap">
+      <h2>Meet LutePlay</h2>
+      <p>Your music. Your way. LutePlay is being developed to make it easy to enjoy music you already own without requiring a streaming subscription.</p>
+      <div class="cards">
+        <div class="card"><h3>Browse Your Music</h3><p>Find songs by artist, album, folder, or search your library.</p></div>
+        <div class="card"><h3>Play It Your Way</h3><p>Enjoy full folders, whole albums, Play All Music, and global shuffle.</p></div>
+        <div class="card"><h3>Local First</h3><p>Keep your own audio files and choose which network features LutePlay may use.</p></div>
+      </div>
+    </div></section>
+    <section class="muted" id="downloads"><div class="wrap"><div class="panel">
+      <h2>Download LutePlay</h2>
+      <p>We're preparing the first test release. Initial downloads will be free. Optional contributions are separate from the download.</p>
+      <p id="version-label"><strong>Latest release:</strong> Not published yet</p>
+      <div class="download-grid" aria-label="Platform downloads">
+        <div class="download-card"><h3>Windows</h3><a id="windows-download" class="button" aria-disabled="true">Coming soon</a><p>We'll enable this after testing the Windows package.</p></div>
+        <div class="download-card"><h3>macOS</h3><a id="macos-download" class="button" aria-disabled="true">Coming soon</a><p>We'll enable this after testing a Mac-compatible package.</p></div>
+        <div class="download-card"><h3>Linux</h3><a id="linux-download" class="button" aria-disabled="true">Coming soon</a><p>We'll enable this after testing the Linux package.</p></div>
+      </div>
+      <p class="note"><a id="all-releases" hidden>View all official releases</a> Downloads and contributions are separate. No paid account is needed for the initial free release.</p>
+      <h3>What's new</h3><ul id="release-notes"><li>Release notes will appear after the first tested build is published.</li></ul>
+    </div></div></section>
+    <section id="support"><div class="wrap">
+      <h2>Help Bryce Industries Grow</h2>
+      <p>If you want to support Bryce Industries' development of LutePlay and future projects, you can make an optional contribution. Contributions are not required to download our free software, and this is company support rather than a charitable donation.</p>
+      <a id="donate-button" class="button gold" aria-disabled="true">Contributions coming soon</a>
+      <p class="note" id="contribution-note">We'll activate this button when Bryce Industries' official PayPal payment link is ready.</p>
+    </div></section>
+    <section class="muted" id="contact"><div class="wrap">
+      <h2>Contact &amp; Testing</h2>
+      <p>Installation instructions and tester feedback details will be published with our first release.</p>
+      <p><a id="contact-link" hidden>Contact Bryce Industries</a></p>
+    </div></section>
+  </main>
+  <footer><div class="wrap">&copy; <span id="year">2026</span> Bryce Industries Incorporated &bull; Your music. Your way.</div></footer>
+  <script>
+    "use strict";
+    const secureUrl = (value) => {
+      if (typeof value !== "string" || !value) return "";
+      try {
+        const url = new URL(value);
+        return url.protocol === "https:" ? url.href : "";
+      } catch (_) { return ""; }
+    };
+    function enableLink(id, url, label) {
+      const element = document.getElementById(id);
+      element.href = url;
+      element.textContent = label;
+      element.removeAttribute("aria-disabled");
+      element.rel = "noopener noreferrer";
+      element.target = "_blank";
+    }
+    const fetchJson = async (path) => {
+      const response = await fetch(path, { cache: "no-store" });
+      if (!response.ok) throw new Error("Unable to load " + path);
+      return response.json();
+    };
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Edit site-settings.json for company payment, release archive and contact URLs.
+    fetchJson("site-settings.json").then((config) => {
+      const paypal = secureUrl(config.paypal_contribution_url);
+      if (paypal) {
+        const host = new URL(paypal).hostname.toLowerCase();
+        if (host === "paypal.com" || host.endsWith(".paypal.com") ||
+            host === "paypal.me" || host.endsWith(".paypal.me")) {
+          enableLink("donate-button", paypal, "Help Bryce Industries Grow — Contribute");
+          document.getElementById("contribution-note").textContent =
+            "Optional contribution through Bryce Industries' official PayPal link.";
+        }
+      }
+      const releases = secureUrl(config.github_releases_url);
+      if (releases && new URL(releases).hostname.toLowerCase() === "github.com") {
+        const link = document.getElementById("all-releases");
+        link.href = releases;
+        link.textContent = "View all official releases";
+        link.hidden = false;
+      }
+      if (typeof config.contact_email === "string" &&
+          /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(config.contact_email)) {
+        const link = document.getElementById("contact-link");
+        link.href = "mailto:" + encodeURIComponent(config.contact_email).replace("%40", "@");
+        link.textContent = "Email Bryce Industries";
+        link.hidden = false;
+      }
+    }).catch(() => { /* No payment link means the contribution button stays disabled. */ });
+
+    // Site and program consume exactly the same updates.json manifest.
+    fetchJson("updates.json").then((manifest) => {
+      if (manifest.schema !== 1) return;
+      const published = (release) => release && typeof release === "object" &&
+        (secureUrl(release.download_url) ||
+        Object.values(release.downloads || {}).some((value) => secureUrl(value)));
+      const channel = published(manifest.stable) ? "stable" :
+                      published(manifest.beta) ? "beta" : "";
+      if (!channel) return;
+      const release = manifest[channel];
+      document.getElementById("version-label").textContent =
+        "Latest " + channel + " release: " + String(release.version || "");
+      const notes = document.getElementById("release-notes");
+      if (Array.isArray(release.notes) && release.notes.length) {
+        notes.replaceChildren();
+        release.notes.slice(0, 8).forEach((note) => {
+          const item = document.createElement("li");
+          item.textContent = String(note);
+          notes.appendChild(item);
+        });
+      }
+      for (const platform of ["windows", "macos", "linux"]) {
+        const link = secureUrl(release.downloads?.[platform]);
+        if (link) enableLink(platform + "-download", link, "Download — Free");
+      }
+    }).catch(() => { /* Website still functions if release metadata is unavailable. */ });
+  </script>
+</body>
+</html>

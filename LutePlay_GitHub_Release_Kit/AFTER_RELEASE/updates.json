@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "stable": {
+    "version": "0.0.0",
+    "download_url": "",
+    "downloads": {"windows": "", "macos": "", "linux": ""},
+    "notes": []
+  },
+  "beta": {
+    "version": "0.1.0-dev",
+    "download_url": "https://github.com/brycegeorge37-droid/Bryce-Industries-Software/releases/tag/luteplay-v0.1.0-dev",
+    "downloads": {
+      "windows": "",
+      "macos": "",
+      "linux": "https://github.com/brycegeorge37-droid/Bryce-Industries-Software/releases/download/luteplay-v0.1.0-dev/luteplay_0.1.0~dev_amd64.deb"
+    },
+    "notes": [
+      "First packaged Linux x86-64 beta, tested on Kubuntu.",
+      "Terminal player with folder playback, shuffle, volume controls and Sever/Unsever.",
+      "Requires system VLC; other Linux distributions are not yet verified."
+    ]
+  }
+}

@@ -1,3 +1,4 @@
+
 {
   "schema": 1,
   "stable": {
@@ -12,14 +13,15 @@
   },
   "beta": {
     "version": "0.1.0-dev",
-    "download_url": "",
+    "download_url": "https://github.com/brycegeorge37-droid/Bryce-Industries-Software/releases/tag/luteplay-v0.1.0-dev",
     "downloads": {
       "windows": "",
       "macos": "",
-      "linux": ""
+      "linux": "https://github.com/brycegeorge37-droid/Bryce-Industries-Software/releases/tag/luteplay-v0.1.0-dev"
     },
     "notes": [
-      "Our first LutePlay beta download will be listed here after platform testing."
+      "LutePlay's first Linux beta release.",
+      "Includes music browsing, folder playback, shuffle, volume controls and update notifications."
     ]
   }
 }
